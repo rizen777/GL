@@ -5,10 +5,10 @@
 
 import UIKit
 
-class LeftViewController : UITableViewController	{
-    
+class LeftViewController: UITableViewController {
+
     var menus = ["Metrics", "Settings"]
-    
+
     enum LeftMenu: Int {
         case Metrics = 0
         case Settings
@@ -27,5 +27,5 @@ class LeftViewController : UITableViewController	{
         cell.menuItemTitle.text = menus[indexPath.row]
         return cell
     }
-    
+
 }

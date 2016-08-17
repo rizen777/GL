@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		26487A349A89E15AA25EB841 /* Pods_GymLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5189C4C2B138194B877FB887 /* Pods_GymLogger.framework */; };
+		5860312B00C82F8D6B1180A3 /* MetricCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586033183B5D6E73276E825D /* MetricCellView.swift */; };
 		586033DA9D2EA144A04A25F7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58603B836C5EC8721DEE3FEA /* Info.plist */; };
 		58603444BD6CECD45DFCE184 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58603DA69C3C8FEC8A07E658 /* ViewController.swift */; };
 		586034C0DD2B595BFB413CD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5860345A93BE1DE77FF44B40 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 		5860364D212AEE7B91541617 /* GymLoggerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586039ADC25D953E2D42449E /* GymLoggerUITests.swift */; };
 		586036F025AB6CB2060670F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586034E4F58169FB829994D9 /* AppDelegate.swift */; };
 		586037A08E20AF6DC734CC9A /* GymLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586031125B7F069035C40DD0 /* GymLoggerTests.swift */; };
+		58603953229142DB71F824DC /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58603D8947F4D5B86535BA7E /* Log.swift */; };
 		58603CF76C815B4477147FBC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5860358021CC528CCEF7BD19 /* Info.plist */; };
 		58603D433009AE3D896FC019 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586032D860EB2E16972F8C1E /* LeftViewController.swift */; };
 		58603E434C4D2E047C61FCF2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5860300891D4E4AFDA97FEC8 /* MainViewController.swift */; };
@@ -55,6 +57,7 @@
 		586031125B7F069035C40DD0 /* GymLoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymLoggerTests.swift; sourceTree = "<group>"; };
 		5860315B70CA6E0CFE582F1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		586032D860EB2E16972F8C1E /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		586033183B5D6E73276E825D /* MetricCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetricCellView.swift; sourceTree = "<group>"; };
 		5860342A521BE7850A2CF8D4 /* GymLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		586034E4F58169FB829994D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5860358021CC528CCEF7BD19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -62,6 +65,7 @@
 		586039ADC25D953E2D42449E /* GymLoggerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymLoggerUITests.swift; sourceTree = "<group>"; };
 		58603A1A25B97A929F53331C /* GymLoggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymLoggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58603B836C5EC8721DEE3FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		58603D8947F4D5B86535BA7E /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		58603DA69C3C8FEC8A07E658 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		58603E76BEB1C6EA246E34EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		611966A69F3F13EB30250D8B /* Pods-GymLoggerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymLoggerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GymLoggerTests/Pods-GymLoggerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +120,8 @@
 				849CA8041D63ACD5000D23F6 /* MenuTableViewCell.swift */,
 				843BC6091D63BB4400B1BBC3 /* MetricsViewController.swift */,
 				843BC60B1D63BB7000B1BBC3 /* GraphViewController.swift */,
+				58603E4F2FDA5A67133977AF /* Model */,
+				586033183B5D6E73276E825D /* MetricCellView.swift */,
 			);
 			path = GymLogger;
 			sourceTree = "<group>";
@@ -158,6 +164,14 @@
 				586039ADC25D953E2D42449E /* GymLoggerUITests.swift */,
 			);
 			path = GymLoggerUITests;
+			sourceTree = "<group>";
+		};
+		58603E4F2FDA5A67133977AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				58603D8947F4D5B86535BA7E /* Log.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		65F5B285C2A0B26C7CFA6B4D /* Frameworks */ = {
@@ -253,6 +267,7 @@
 		5860359B80702C4AB8EE37EA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = "";
 				LastSwiftUpdateCheck = 0720;
 				ORGANIZATIONNAME = SportSolution;
 			};
@@ -448,6 +463,8 @@
 				58603D433009AE3D896FC019 /* LeftViewController.swift in Sources */,
 				58603E434C4D2E047C61FCF2 /* MainViewController.swift in Sources */,
 				849CA8051D63ACD5000D23F6 /* MenuTableViewCell.swift in Sources */,
+				58603953229142DB71F824DC /* Log.swift in Sources */,
+				5860312B00C82F8D6B1180A3 /* MetricCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,7 +579,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -577,7 +595,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos9.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -613,7 +631,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -635,7 +654,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos9.3;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
